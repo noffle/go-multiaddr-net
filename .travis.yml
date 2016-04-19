@@ -16,6 +16,8 @@ before_install:
   - go get github.com/whyrusleeping/gx-go
 
 install:
+  - echo $(pwd)
+  - ls
   - gx --verbose install --global
   - gx-go rewrite
 
